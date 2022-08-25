@@ -1,0 +1,16 @@
+# Syntax Coloring Map for Heartbeat Library
+
+# Datatypes (KEYWORD1)
+heartBeat           	KEYWORD1
+heartBeat_0          	KEYWORD1
+heartBeat_1          	KEYWORD1
+heartBeat_2          	KEYWORD1
+
+# Methods and Functions (KEYWORD2)
+init            	KEYWORD2
+update          	KEYWORD2
+invert_level    	KEYWORD2
+
+# Constants (LITERAL1)
+# NONE          	LITERAL1
+
