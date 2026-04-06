@@ -8,7 +8,10 @@ class HEARTBEAT {
     
     void init();
     void update();
+
     void invert_level();
+    void set_activeLow();
+    void set_activeHigh();
     
     private :
     const uint16_t heartBeatArray [4] = { 70, 245, 70, 1015 };

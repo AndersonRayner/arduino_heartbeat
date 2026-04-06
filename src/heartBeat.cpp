@@ -32,3 +32,15 @@ void HEARTBEAT::invert_level(void)
 {
     LEDS_state = !LEDS_state;
 }
+
+void HEARTBEAT::set_activeLow()
+{
+  heartBeatIndex = 0;
+  digitalWrite(_pin, LOW);
+}
+
+void HEARTBEAT::set_activeHigh()
+{
+  heartBeatIndex = 0;
+  digitalWrite(_pin, HIGH);
+}
