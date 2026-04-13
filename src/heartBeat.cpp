@@ -36,11 +36,15 @@ void HEARTBEAT::invert_level(void)
 void HEARTBEAT::set_activeLow()
 {
   heartBeatIndex = 0;
-  digitalWrite(_pin, LOW);
+  heartBeatTimer = millis();
+  digitalWrite(_pin, HIGH);
+  update();
 }
 
 void HEARTBEAT::set_activeHigh()
 {
   heartBeatIndex = 0;
-  digitalWrite(_pin, HIGH);
+  heartBeatTimer = millis();
+  digitalWrite(_pin, LOW);
+  update();
 }
